@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img src="images/Logo.png" alt="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -32,11 +34,13 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/sit.jpg" alt="">
+                    <img src="images/4.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, officia ea. Ipsam quis aliquam numquam! Dicta, officia placeat tempora saepe ipsum recusandae perspiciatis adipisci asperiores? Debitis distinctio suscipit voluptate est?</p>
+                    <p>I'm Sumiran Singh, a passionate frontend web developer with a knack for crafting clean, user-friendly interfaces. I specialize in React.js and love blending design with functionality to create modern, responsive web applications. Currently a fresher, I'm actively seeking opportunities where I can contribute my skills and grow as a developer.
+
+                    I enjoy learning new technologies, solving UI challenges, and transforming ideas into functional, pixel-perfect websites. With a solid foundation in HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS, I'm ready to build impactful web experiences.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -45,23 +49,44 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>HTML</span><br>Semantic structure and clean markup</li>
+                            <li><span>CSS</span><br>Responsive layouts with Flexbox & Grid</li>
+                            <li><span>JavaScript</span><br>DOM manipulation & ES6+ syntax</li>
+                            <li><span>React.js</span><br>Component-based SPA development</li>
+                            <li><span>Tailwind CSS</span><br>Utility-first responsive UI design</li>
+                            <li><span>Node.js</span><br>Basic backend and API development</li>
+                            <li><span>Responsive Design</span><br>Mobile-friendly cross-browser websites</li>
+                            <li><span>UI/UX</span><br>Clean and user-centered interface design</li>
+                            <li><span>Git & GitHub</span><br>Version control and collaboration tools</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>We</span><br>Web app Development</li>
-                            <li><span>App </span><br>Building An apps</li>
+                            <ul>
+                                <li>
+                                    <span>Computer Teacher</span><br>
+                                    Primary School | 2025 – Present<br>
+                                    Taught basic computer skills, MS Office, and internet fundamentals to classes PG to 5th. Also managed digital content and helped design student worksheets and holiday homework.
+                                </li>
+                                <li>
+                                    <span>Project Developer (Self-Initiated)</span><br>
+                                    Personal Projects | 2023 – Present<br>
+                                    Developed multiple frontend-based projects using React.js, Tailwind CSS, and JavaScript, including a Spotify clone, Simon Says game, school website, and more.
+                                </li>
+                                <li>
+                                    <span>Academic Projects</span><br>
+                                    MCA Final Year | PSIT Kanpur<br>
+                                    Built a complete school website as a major project, focusing on UI/UX, component design, and responsive layout using React and Tailwind.
+                                </li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2025</span><br>Desdsjkfdsfd dsfsjfkdjf</li>
-                            <li><span>2025</span><br>Web apjf dfljdsfkj dfjdf</li>
-                            <li><span>2025</span><br>Build dfkjdsfks nfnd apps</li>
+                            <li><span>2018</span><br>High School ( UP Board )</li>
+                            <li><span>2020</span><br>Inter ( UP Board )</li>
+                            <li><span>2023</span><br>B.Sc ( CSJMU )</li>
+                            <li><span>2025</span><br>MCA ( AKTU )</li>
                         </ul>
                     </div>
                 </div>
@@ -103,40 +128,66 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work.jpg" alt="">
+                    <img src="images/social media.png" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero nihil laboriosam cum aliquid in venia
-                        </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
+                    <h3>Nursery Math Quiz Website</h3>
+                    <p>An interactive math quiz for young learners covering basic math concepts, built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/yourusername/nursery-math-quiz" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
                 </div>
                 <div class="work">
-                    <img src="images/work.jpg" alt="">
+                    <img src="images/school app.jpg" alt="">
                     <div class="layer">
-                        <h3>School App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero nihil laboriosam cum aliquid in venia
-                        </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
+                    <h3>One Page School Website</h3>
+                    <p>Responsive school website built using React.js and Tailwind CSS, featuring admission form, gallery, and event sections.</p>
+                    <a href="https://github.com/sumiransingh100/one-page-school-website" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
                 </div>
                 <div class="work">
-                    <img src="images/work.jpg" alt="">
+                    <img src="images/music app.png" alt="">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero nihil laboriosam cum aliquid in venia
-                        </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
+                    <h3>Spotify Clone (Frontend)</h3>
+                    <p>Frontend replica of the Spotify app, developed with HTML, CSS, and JavaScript. A basic UI for music streaming experience.</p>
+                    <a href="https://github.com/sumiransingh100/spotify-clone-frontend" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="portfolio.html" class="btn">See more</a>
         </div>
     </div>
 
     <!-- ----------------------------contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sumiransingh100@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9264933449</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Portfolio. Made with <span>&hearts;</span> by Sumiran Singh</p>
+        </div>
+    </div>
 
-    
 
 
     <script>
@@ -153,6 +204,33 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <script src="app.js"></script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwuZc97CRFLwYXO11Nn0_HlO0bKqDjFnaTaQSwRDhy-K828ufjic61PuvVQ_CGsIixtlA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
